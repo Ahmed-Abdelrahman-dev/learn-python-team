@@ -79,26 +79,41 @@ def test_dictionary():
     assert dictionary_for_string_keys['jack'] == 4098
 
 def test_student_b_dictionary_additions():
-    """Additional tests for dictionary update and retrieval operations (Student B)."""
-    scores = {"math": 80, "science": 85}
+    """Additional tests for dictionary update and retrieval operations."""
+    scores = {'math': 80, 'science': 85}
     
     # Adding a new entry
-    scores["english"] = 90
-    assert scores["english"] == 90
+    scores['english'] = 90
+    assert scores['english'] == 90
     
     # Updating an existing entry
-    scores["math"] = 95
-    assert scores["math"] == 95
+    scores['math'] = 95
+    assert scores['math'] == 95
 
 
 def test_student_b_dictionary_removal():
-    """Additional tests for dictionary removal methods (Student B)."""
-    items = {"pen": 2, "pencil": 1, "eraser": 3}
+    """Additional tests for dictionary removal methods."""
+    items = {'pen': 2, 'pencil': 1, 'eraser': 3}
     
     # Remove item using pop
-    count = items.pop("eraser")
+    count = items.pop('eraser')
     assert count == 3
-    assert "eraser" not in items
+    assert 'eraser' not in items
     
     # Verify remaining keys length
     assert len(items) == 2
+
+
+def test_student_b_dictionary_get_method():
+    """Additional tests for dictionary get() with defaults and updates."""
+    profile = {'name': 'Alice', 'role': 'student'}
+    
+    # Test get() with default value for missing key
+    assert profile.get('age', 20) == 20
+    
+    # Test update() method
+    profile.update({'role': 'admin', 'active': True})
+    assert profile['role'] == 'admin'
+    assert profile['active'] is True
+
+    
