@@ -353,3 +353,21 @@ def test_list_aggregate_functions():
     # count() returns how many times a value appears in the list.
     assert scores.count(85) == 2
     assert scores.count(100) == 0
+    
+    
+def test_list_insert_remove_and_sort_by_key():
+    """Inserting, removing and sorting list items with a key."""
+
+    fruits = ['banana', 'kiwi', 'apple']
+
+    # insert() adds an item at a given position.
+    fruits.insert(1, 'cherry')
+    assert fruits == ['banana', 'cherry', 'kiwi', 'apple']
+
+    # remove() deletes the first item with the given value.
+    fruits.remove('kiwi')
+    assert fruits == ['banana', 'cherry', 'apple']
+
+    # sort(key=len) sorts the list in place by the length of each item.
+    fruits.sort(key=len)
+    assert fruits == ['apple', 'banana', 'cherry']
