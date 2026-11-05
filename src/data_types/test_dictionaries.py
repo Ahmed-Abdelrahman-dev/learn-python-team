@@ -77,3 +77,28 @@ def test_dictionary():
     assert dictionary_for_string_keys['sape'] == 4139
     assert dictionary_for_string_keys['guido'] == 4127
     assert dictionary_for_string_keys['jack'] == 4098
+
+def test_student_b_dictionary_additions():
+    """Additional tests for dictionary update and retrieval operations (Student B)."""
+    scores = {"math": 80, "science": 85}
+    
+    # Adding a new entry
+    scores["english"] = 90
+    assert scores["english"] == 90
+    
+    # Updating an existing entry
+    scores["math"] = 95
+    assert scores["math"] == 95
+
+
+def test_student_b_dictionary_removal():
+    """Additional tests for dictionary removal methods (Student B)."""
+    items = {"pen": 2, "pencil": 1, "eraser": 3}
+    
+    # Remove item using pop
+    count = items.pop("eraser")
+    assert count == 3
+    assert "eraser" not in items
+    
+    # Verify remaining keys length
+    assert len(items) == 2
