@@ -78,7 +78,7 @@ def test_dictionary():
     assert dictionary_for_string_keys['guido'] == 4127
     assert dictionary_for_string_keys['jack'] == 4098
 
-def test_student_b_dictionary_additions():
+def test_dictionary_additions():
     """Additional tests for dictionary update and retrieval operations."""
     scores = {'math': 80, 'science': 85}
     
@@ -91,7 +91,7 @@ def test_student_b_dictionary_additions():
     assert scores['math'] == 95
 
 
-def test_student_b_dictionary_removal():
+def test_dictionary_pop_removal():
     """Additional tests for dictionary removal methods."""
     items = {'pen': 2, 'pencil': 1, 'eraser': 3}
     
@@ -104,7 +104,7 @@ def test_student_b_dictionary_removal():
     assert len(items) == 2
 
 
-def test_student_b_dictionary_get_method():
+def test_dictionary_get_and_update_methods():
     """Additional tests for dictionary get() with defaults and updates."""
     profile = {'name': 'Alice', 'role': 'student'}
     
