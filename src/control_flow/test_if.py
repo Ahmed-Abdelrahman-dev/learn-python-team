@@ -26,7 +26,8 @@ def test_if_statement():
         conclusion = 'Number bigger than or equal to one'
 
     assert conclusion == 'Number bigger than or equal to one'
-    
+
+
 def test_grade_letter():
     """IF statement with multiple elif"""
 
@@ -43,3 +44,20 @@ def test_grade_letter():
         grade = 'F'
 
     assert grade == 'B'
+
+def test_nested_if():
+    """Nested IF statement"""
+
+    age = 20
+    has_ticket = True
+    result = ''
+
+    if age >= 18:
+        if has_ticket:
+            result = 'Allowed in'
+        else:
+            result = 'Buy a ticket first'
+    else:
+        result = 'Too young'
+
+    assert result == 'Allowed in'
