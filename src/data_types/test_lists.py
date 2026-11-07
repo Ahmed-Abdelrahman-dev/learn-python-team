@@ -63,7 +63,8 @@ def test_list_type():
 
     # The built-in function len() also applies to lists
     letters = ['a', 'b', 'c', 'd']
-    assert len(letters) == 4
+    assert len(letters) == 4  # the list contains four letters
+    assert 'c' in letters
 
     # It is possible to nest lists (create lists containing other lists),
     # for example:
