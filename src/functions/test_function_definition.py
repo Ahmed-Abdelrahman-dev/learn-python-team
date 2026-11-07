@@ -105,6 +105,20 @@ def test_function_definition():
     greet_function = compose_greet_func()
     assert greet_function() == 'Hello there!'
 
+
+    ## Start of functions added by Ahmed as a part of Assignment 4
+    
+    # Function with parameters and return value.
+    def multiply_numbers(a, b):
+        return a * b
+
+    assert multiply_numbers(4, 5) == 20
+    
+    ## End of functions added by Ahmed as a part of Assignment 4
+
+
+
+
     # Inner functions have access to the enclosing scope.
 
     # More commonly known as a closure. A very powerful pattern that we will come across while
@@ -121,3 +135,8 @@ def test_function_definition():
     greet_with_closure = compose_greet_func_with_closure('John')
 
     assert greet_with_closure() == 'Hello there, John!'
+
+
+test_function_definition()
+print("Done running test_function_definition.py")
+
