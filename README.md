@@ -1,5 +1,8 @@
 # Playground and Cheatsheet for Learning Python
 
+> **Team repository:** maintained by learn-python-team for the COMP 354 SCM assignment.
+> Team: Student A (@Narges-Gol), Student B (@ZouhourMallat), Student C (@samihashahin), Student D (@Ahmed-Abdelrahman-dev).
+
 > 🇺🇦 UKRAINE [IS BEING ATTACKED](https://war.ukraine.ua/) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
 > - Help Ukraine via:
 >   - [Serhiy Prytula Charity Foundation](https://prytulafoundation.org/en/)
