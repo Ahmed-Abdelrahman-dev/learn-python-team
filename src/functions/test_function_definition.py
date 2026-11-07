@@ -113,6 +113,16 @@ def test_function_definition():
         return a * b
 
     assert multiply_numbers(4, 5) == 20
+
+
+    # Function with simple input validation.
+    def divide_numbers(a, b):
+        if b == 0:
+            return None
+        return a / b
+
+    assert divide_numbers(10, 2) == 5
+    assert divide_numbers(10, 0) is None
     
     ## End of functions added by Ahmed as a part of Assignment 4
 
@@ -135,8 +145,3 @@ def test_function_definition():
     greet_with_closure = compose_greet_func_with_closure('John')
 
     assert greet_with_closure() == 'Hello there, John!'
-
-
-test_function_definition()
-print("Done running test_function_definition.py")
-
